@@ -20,7 +20,7 @@ export default {
   data () {
     return {
       title: '',
-      url: 'http://localhost:3000/tasks',
+      url: 'http://todo-app-rails-api.herokuapp.com//tasks',
       tasks: []
     }
   },

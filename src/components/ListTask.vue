@@ -17,10 +17,10 @@ export default {
   props: ['tasks', 'title'],
   methods: {
     addTask () {
-      this.$axios.post('http://localhost:3000/tasks', { title: this.title })
+      this.$axios.post('http://todo-app-rails-api.herokuapp.com/tasks', { title: this.title })
     },
     deleteTask (id, index) {
-      this.$axios.delete(`http://localhost:3000/tasks/${id}`)
+      this.$axios.delete(`http://todo-app-rails-api.herokuapp.com//tasks/${id}`)
         .then(res => this.tasks.splice(index, 1))
     },
     completeTask (task) {
